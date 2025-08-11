@@ -47,9 +47,10 @@ def provision_user(row):
         print("Error:", response.text)
 
 def main():
-    with open('users.csv', newline='') as csvfile:
+    with open('Provisioning-users.csv', newline='') as csvfile:
         reader = csv.DictReader(csvfile)
         for row in reader:
             provision_user(row)
 
-if __name__ ==
+if __name__ == "__main__":
+    main()
